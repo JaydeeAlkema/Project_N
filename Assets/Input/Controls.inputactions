@@ -1,5 +1,5 @@
 {
-    "name": "PlayerControls",
+    "name": "Controls",
     "maps": [
         {
             "name": "Player",
@@ -125,6 +125,34 @@
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
+                }
+            ]
+        },
+        {
+            "name": "Combat",
+            "id": "ac92627a-7950-44f8-bbbd-cb0df90d13c4",
+            "actions": [
+                {
+                    "name": "Melee",
+                    "type": "Value",
+                    "id": "89faaece-29f5-402c-a005-e0a9556ee756",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "980d18c1-36b4-485d-a8eb-29816755f594",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard & Mouse",
+                    "action": "Melee",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

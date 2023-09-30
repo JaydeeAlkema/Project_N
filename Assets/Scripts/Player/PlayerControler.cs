@@ -2,20 +2,19 @@ using NaughtyAttributes;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.InputSystem;
-namespace Assets.Scripts
+
+namespace Assets.Scripts.Player
 {
 	[RequireComponent(typeof(Rigidbody2D), typeof(CircleCollider2D))]
-	public class PlayerController : MonoBehaviour
+	public class PlayerControler : MonoBehaviour
 	{
 		[SerializeField, BoxGroup("Components")] private Rigidbody2D _rigidbody2D = null;
-		[SerializeField, BoxGroup("Components")] private CircleCollider2D _circleCollider2D = null;
-		[SerializeField, BoxGroup("Components")] private PlayerInput _playerInput = null;
 
 		[SerializeField, BoxGroup("Movement")] private float _moveSpeed = 8f;
 
 		[SerializeField, BoxGroup("Pointer")] private Transform _pointerPivot;
 
-		private PlayerControls _controls;
+		private Controls _controls;
 
 		private void Awake()
 		{
@@ -35,7 +34,7 @@ namespace Assets.Scripts
 		#region Input
 		private void SetupInputs()
 		{
-			_controls = new PlayerControls();
+			_controls = new Controls();
 			_controls.Enable();
 
 			_controls.Player.Enable();
