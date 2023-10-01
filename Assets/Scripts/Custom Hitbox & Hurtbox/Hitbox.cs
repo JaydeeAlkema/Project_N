@@ -7,7 +7,7 @@ using UnityEngine;
 
 using Assets.Scripts.Interfaces;
 
-namespace Assets.Scripts
+namespace Assets.Scripts.CustomHurtboxAndHitbox
 {
 	public enum HitboxState
 	{

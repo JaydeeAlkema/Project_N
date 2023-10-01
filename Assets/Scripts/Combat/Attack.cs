@@ -1,6 +1,7 @@
 ﻿using Assets.Scripts.Interfaces;
 using NaughtyAttributes;
 using UnityEngine;
+using Assets.Scripts.CustomHurtboxAndHitbox;
 
 namespace Assets.Scripts
 {

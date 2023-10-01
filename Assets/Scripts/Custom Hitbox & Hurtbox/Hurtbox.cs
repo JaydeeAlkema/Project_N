@@ -2,7 +2,7 @@ using Assets.Scripts.Interfaces;
 using NaughtyAttributes;
 using UnityEngine;
 
-namespace Assets.Scripts
+namespace Assets.Scripts.CustomHurtboxAndHitbox
 {
 	public enum HurtboxState
 	{

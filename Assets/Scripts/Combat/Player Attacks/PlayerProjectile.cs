@@ -1,6 +1,7 @@
 ﻿using Assets.Scripts;
 using NaughtyAttributes;
 using UnityEngine;
+using Assets.Scripts.CustomHurtboxAndHitbox;
 
 namespace Assets.Scripts.Combat.PlayerAttacks
 {
